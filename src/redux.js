@@ -3,8 +3,6 @@ export const createStore = (reducer) => {
   // dispatch是改变，getState是获得
   let state;
   // 因为监听的组件有多个
-
-
   let listeners = [];
 // 获取最新的状态
   const getState = () => state;

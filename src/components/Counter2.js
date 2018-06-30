@@ -14,7 +14,7 @@ class Counter2 extends Component {
   }
 }
 function mapStateToProps(state) {
-  return state.counter2;
+  return state.counter2;//这里用的是reducer2,一次会增加两次
 }
 
 function mapDispatchToProps(dispatch) {

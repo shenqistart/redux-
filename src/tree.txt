@@ -1,0 +1,30 @@
+卷 NewDisk 的文件夹 PATH 列表
+卷序列号为 CED6-6BAA
+E:.
+│  index.js
+│  redux.js
+│  tree.txt
+│  
+├─components
+│      Counter.js
+│      Counter1.js
+│      Counter2.js
+│      Counter3.js
+│      Counter4.js
+│      
+└─store
+    │  action-types.js
+    │  index.js
+    │  redux-logger.js
+    │  redux-promise.js
+    │  redux-thunk.js
+    │  
+    ├─actionCreaters
+    │      counter3.js
+    │      
+    └─reducers
+            counter1.js
+            counter2.js
+            counter3.js
+            index.js
+            

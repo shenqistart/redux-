@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
-import {connect} from 'react-redux';
-import findCategoryList from './model';
+import {connect} from 'react-redux'; //新引入的扩展内容
 import * as types from '../store/action-types';
 class Counter1 extends Component {
   render() {
@@ -15,19 +14,13 @@ class Counter1 extends Component {
   }
 }
 function mapStateToProps(state) {
-  return state.counter1;
+  return state.counter1;//对应的是reducer1
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps(dispatch) {//将actionCreater的内容放在了外面
   return {
     onIncreaseClick: () => dispatch({type: types.INCREASE}),
-    // onThunkIncreaseClick: ()=>dispatch(
-    //   (dispatch)=>{
-    //   setTimeout(function(){
-    //     dispatch({type: types.INCREASE});
-    //   },3000)
-    //   }
-    // ),
+    
     onThunkIncreaseClick:function(){
       return dispatch(
         
@@ -39,27 +32,6 @@ function mapDispatchToProps(dispatch) {
         }
       )
     }
-    // onThunkIncreaseClick(){
-    //   return function(dispatch,getState){
-    //     console.log('ok');
-    //     findCategoryList().then((res)=>{
-    //       let classList=res.data;
-    //       console.log(classList);
-    //        dispatch({
-    //         type: types.INCREASE
-    //        })
-    //   });
-    //   }
-    // }
-    
-    // onThunkIncreaseClick(){
-    //   console.log('ok');
-    //   return function(dispatch,getState){
-        
-    //       dispatch({type:types.INCREASE});
-        
-    //   }
-    // }
   }
 }
 

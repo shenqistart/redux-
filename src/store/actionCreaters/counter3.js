@@ -1,6 +1,4 @@
 import * as Types from "../action-types";
-// import {getActionList,updateActivity} from "../../js/model/actionList";
-
 let actions = {
     add(){
         return {type:Types.INCREASE}

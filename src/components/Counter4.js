@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as types from '../store/action-types';
+// 这里可以用别人的action中的内容
 import actions from '../store/actionCreaters/counter3';
+// 使用@修饰符简化connect的写法，需要安装并配置"babel-plugin-transform-decorators-legacy": "^1.3.4",
+// "babel-preset-stage-0": "^6.24.1",
 @connect(state => ({...state.counter3}), actions)
 export default class Counter4 extends Component {
   render() {
