@@ -25,7 +25,7 @@ let increace=(amount)=>({type:INCREASE,amount:amount});
 let decreace=(amount)=>({type:DECREASE,amount:amount});
 // let increace=()=>({type:INCREASE});
 // let decreace=()=>({type:DECREASE});
-// 组件：里面有store的三个方法getState()获得state数据,subscribe绑定渲染内容,dispatch触发store中内容的变化
+// 组件：里面有createStore的三个方法getState()获得state数据,subscribe绑定渲染内容,dispatch触发store中内容的变化
 export default class Counter extends React.Component{
     constructor(){
         super();

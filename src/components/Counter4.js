@@ -9,7 +9,7 @@ import actions from '../store/actionCreaters/counter3';
 export default class Counter4 extends Component {
   render() {
     const {number, add, addThunk} = this.props
-    console.log(this.props);
+    console.log(this.props,'ok');
     return (
       <div>
         <span>{number}</span>

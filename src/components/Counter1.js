@@ -16,7 +16,6 @@ class Counter1 extends Component {
 function mapStateToProps(state) {
   return state.counter1;//对应的是reducer1
 }
-
 function mapDispatchToProps(dispatch) {//将actionCreater的内容放在了外面
   return {
     onIncreaseClick: () => dispatch({type: types.INCREASE}),
@@ -24,7 +23,7 @@ function mapDispatchToProps(dispatch) {//将actionCreater的内容放在了外�
     onThunkIncreaseClick:function(){
       return dispatch(
         
-        (dispatch)=>{
+        (dispatch,getState)=>{
           // 在这里做延时
           setTimeout(function(){
             dispatch({type: types.INCREASE});
@@ -34,7 +33,6 @@ function mapDispatchToProps(dispatch) {//将actionCreater的内容放在了外�
     }
   }
 }
-
 export default connect(
   mapStateToProps,
   mapDispatchToProps
