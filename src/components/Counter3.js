@@ -10,8 +10,8 @@ class Counter3 extends Component {
     return (
       <div>
         <span>{number}</span>
-        <button onClick={add}>加1</button>
-        <button onClick={addThunk}>3秒后加1</button>
+        <button onClick={add}>加2</button>
+        <button onClick={addThunk}>3秒后加2</button>
       </div>
     )
   }

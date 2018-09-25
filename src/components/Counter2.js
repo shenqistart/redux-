@@ -7,8 +7,8 @@ class Counter2 extends Component {
     return (
       <div>
         <span>{number}</span>
-        <button onClick={onIncreaseClick}>加1</button>
-        <button onClick={onPromiseIncreaseClick}>3秒后加1</button>
+        <button onClick={onIncreaseClick}>加2</button>
+        <button onClick={onPromiseIncreaseClick}>3秒后加2</button>
       </div>
     )
   }
